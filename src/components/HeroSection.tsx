@@ -1,28 +1,32 @@
-
 import React, { useState, useEffect } from 'react';
 import { ArrowDown, ArrowRight } from 'lucide-react';
 
-// Define slide content
+// Define slide content with images
 const slides = [
   {
     title: "ZINDAGI KO YAS BOL",
-    description: "Join the bwoys and say Yas to adventure, thrills, and fun!"
+    description: "Join the bwoys and say Yas to adventure, thrills, and fun!",
+    image: "/lovable-uploads/photo-1649972904349-6e44c42644a7.jpg"
   },
   {
     title: "EXPERIENCE THRILLING RIDES",
-    description: "Get your adrenaline pumping with world-class attractions at Yas Island"
+    description: "Get your adrenaline pumping with world-class attractions at Yas Island",
+    image: "/lovable-uploads/photo-1488590528505-98d2b5aba04b.jpg"
   },
   {
     title: "RELAX IN LUXURY",
-    description: "Enjoy premium accommodations with stunning views of the Arabian Gulf"
+    description: "Enjoy premium accommodations with stunning views of the Arabian Gulf",
+    image: "/lovable-uploads/photo-1518770660439-4636190af475.jpg"
   },
   {
     title: "FAMILY ADVENTURES",
-    description: "Create unforgettable memories with activities for all ages"
+    description: "Create unforgettable memories with activities for all ages",
+    image: "/lovable-uploads/photo-1581091226825-a6a2a5aee158.jpg"
   },
   {
     title: "CULINARY DELIGHTS",
-    description: "Savor exquisite dining experiences from around the world"
+    description: "Savor exquisite dining experiences from around the world",
+    image: "/lovable-uploads/photo-1461749280684-dccba630e2f6.jpg"
   }
 ];
 
@@ -44,7 +48,14 @@ const HeroSection: React.FC = () => {
   };
 
   return (
-    <div className="hero-section">
+    <div 
+      className="hero-section" 
+      style={{ 
+        backgroundImage: `url(${slides[currentSlide].image})`, 
+        backgroundSize: 'cover', 
+        backgroundPosition: 'center' 
+      }}
+    >
       <div className="hero-overlay flex flex-col justify-center items-start">
         <div className="container mx-auto px-4 md:px-6 h-full flex flex-col justify-end pb-32">
           <div className="max-w-xl">
