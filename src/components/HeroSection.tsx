@@ -1,32 +1,33 @@
+
 import React, { useState, useEffect } from 'react';
 import { ArrowDown, ArrowRight } from 'lucide-react';
 
 // Define slide content with images
 const slides = [
   {
-    title: "ZINDAGI KO YAS BOL",
-    description: "Join the bwoys and say Yas to adventure, thrills, and fun!",
-    image: "/lovable-uploads/photo-1649972904349-6e44c42644a7.jpg"
+    title: "DIGITAL NOMAD ADVENTURES",
+    description: "Work, explore, and connect in stunning locations around the world",
+    image: "/lovable-uploads/photo-1526374965328-7f61d4dc18c5.jpg"
   },
   {
-    title: "EXPERIENCE THRILLING RIDES",
-    description: "Get your adrenaline pumping with world-class attractions at Yas Island",
+    title: "NATURE ESCAPES",
+    description: "Discover tranquil landscapes and rejuvenating environments",
+    image: "/lovable-uploads/photo-1500673922987-e212871fec22.jpg"
+  },
+  {
+    title: "URBAN ARCHITECTURE",
+    description: "Experience modern design and innovative cityscapes",
+    image: "/lovable-uploads/photo-1493397212122-2b85dda8106b.jpg"
+  },
+  {
+    title: "TECH & INNOVATION",
+    description: "Explore cutting-edge technology and futuristic environments",
     image: "/lovable-uploads/photo-1488590528505-98d2b5aba04b.jpg"
   },
   {
-    title: "RELAX IN LUXURY",
-    description: "Enjoy premium accommodations with stunning views of the Arabian Gulf",
-    image: "/lovable-uploads/photo-1518770660439-4636190af475.jpg"
-  },
-  {
-    title: "FAMILY ADVENTURES",
-    description: "Create unforgettable memories with activities for all ages",
+    title: "CREATIVE WORKSPACES",
+    description: "Inspire your productivity in unique and dynamic settings",
     image: "/lovable-uploads/photo-1581091226825-a6a2a5aee158.jpg"
-  },
-  {
-    title: "CULINARY DELIGHTS",
-    description: "Savor exquisite dining experiences from around the world",
-    image: "/lovable-uploads/photo-1461749280684-dccba630e2f6.jpg"
   }
 ];
 
